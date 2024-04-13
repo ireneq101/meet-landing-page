@@ -364,6 +364,7 @@ footer > button > span {
     flex-direction: column;
     text-align: center;
     margin: 20% 0 55% 0;
+    padding: 0 4%;
   }
 
   .section3 > div {
