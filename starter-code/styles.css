@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  margin: 80px 0;
+}
+
+section > .for-mobile {
+  display: none;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+section > .left {
+  width: 50%;
+}
+
+section > .left > img {
+  width: 100%;
+}
+
+section > .right {
+  width: 50%;
+}
+
+section > .right > img {
+  width: 100%;
+}
+
+section > .middle {
+  width: 100%;
+}
+
+section > .middle > h1 {
+  color: #28283D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64px;
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+section > .middle > p {
+  color: #87879D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+section > .middle > .click {
+  margin: 0 auto;
+  width: 65%;
+  height: 43%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+section > .middle > .click > button {
+  width: 40%;
+  height: 40%;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 29px;
+  background: #71C0D4;
+  color: #FFF;
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+section > .middle > .click > button > span {
+  color: #8FE3F9;
+}
+
+section > .middle > .click > button:last-child {
+  width: 30%;
+  height: 40%;
+  border-radius: 29px;
+  background: #B18BDD;
+}
+
+.middle-number {
+  width: 100%;
+  text-align: center;
+  margin: 10% 0 5% 0;
+}
+
+.section2 {
+  width: 100%;
+}
+
+.section2 > div {
+  width: 75%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 4%;
+  margin: 0 auto;
+}
+
+.section2 > div > img {
+  width: 100%;
+  border-radius: 4%;
+}
+
+.section3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 7% 0 13% 0;
+}
+
+.section3 > div {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.section3 > div > .div2 {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.section3 > div > h5 {
+  color: #4D96A9;
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+}
+
+.section3 > div > .div2 > h2 {
+  color: #28283D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  padding-bottom: 32px;
+  /* max-width: 50%; */
+}
+
+.section3 > div > p {
+  color: #87879D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+footer {
+  background-image: url(/starter-code/assets/desktop/Bitmap.png);
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 10%;
+  position: relative;
+}
+
+footer > img {
+  position: absolute;
+  bottom: 87%;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+
+footer > h2 {
+  /* color: #FAFAFA; */
+  font-family: "Red Hat Display";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  max-width: 30%;
+}
+
+footer > p {
+  /* color: #FAFAFA; */
+  font-family: "Red Hat Display";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  max-width: 28%;
+}
+
+footer > button {
+  width: 15%;
+  height: 58px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 29px;
+  background: #855FB1;
+  color: #FFF;
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+footer > button > span {
+  color: #D9B8FF;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  header {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  section > .left, .click, .right, .middle {
+    display: none;
+  }
+
+  section > .for-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section > .for-mobile > .div1 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  section > .for-mobile > .div1 > img {
+    width: 100%;
+  }
+
+  section > .for-mobile > .div2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section > .for-mobile > .div2 > h1 {
+  color: #28283D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  }
+
+  section > .for-mobile > .div2 > p {
+  color: #87879D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  padding-bottom: 32px;
+  }
+
+  section > .for-mobile > .div2 > .click {
+    margin: 0 auto;
+    width: 100%;
+    height: 43%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+  }
+  
+  section > .for-mobile > .div2 > .click > button {
+    width: 55%;
+    height: 45%;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 29px;
+    background: #71C0D4;
+    color: #FFF;
+    font-family: "Red Hat Display";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  
+  section > .for-mobile > .div2 > .click > button > span {
+    color: #8FE3F9;
+  }
+  
+  section > .for-mobile > .div2 > .click > button:last-child {
+    width: 40%;
+    height: 40%;
+    border-radius: 29px;
+    background: #B18BDD;
+  }
+
+  .middle-number {
+    width: 100%;
+    text-align: center;
+    margin: 35% 0 10% 0;
+  }
+
+  .middle-number img {
+    width: 15%;
+  }
+
+  .section2 {
+    width: 100%;
+  }
+
+  .section2 > div {
+    width: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8%;
+    row-gap: 8%;
+    margin: 0 auto;
+  }
+
+  .section2 > div > img {
+    width: 100%;
+    border-radius: 4%;
+  }
+
+  .section3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20% 0 55% 0;
+  }
+
+  .section3 > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section3 > div > .div2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .section3 > div > h5 {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+
+  .section3 > div > .div2 > h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 36px;
+  }
+
+  .section3 > div > p {
+    font-size: 1rem;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  footer {
+    background-image: url(/starter-code/assets/desktop/Bitmap\ mobile.png);
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 60% 4%;
+    color: #FAFAFA;
+  }
+
+  footer > img {
+    width: 17%;
+    bottom: 93%;
+  }
+
+  footer > h2 {
+    text-align: center;
+    font-size: 2rem;
+    max-width: 100%;
+    padding-bottom: 24px;
+  }
+
+  footer > p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 100%;
+    padding-bottom: 32px;
+  }
+
+  footer > button {
+    width: 55%;
+    height: 50px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  section > .left, .click, .right, .middle {
+    display: none;
+  }
+
+  section > .for-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section > .for-mobile > .div1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  section > .for-mobile > .div1 > img {
+    width: 100%;
+  }
+
+  section > .for-mobile > .div2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  section > .for-mobile > .div2 > h1 {
+  color: #28283D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  }
+
+  section > .for-mobile > .div2 > p {
+  color: #87879D;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  max-width: 100%;
+  padding-bottom: 34px;
+  }
+
+  section > .for-mobile > .div2 > .click {
+    margin: 0 auto;
+    width: 100%;
+    height: 43%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  section > .for-mobile > .div2 > .click > button {
+    width: 45%;
+    height: 47%;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 29px;
+    background: #71C0D4;
+    color: #FFF;
+    font-family: "Red Hat Display";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+  }
+  
+  section > .for-mobile > .div2 > .click > button > span {
+    color: #8FE3F9;
+  }
+  
+  section > .for-mobile > .div2 > .click > button:last-child {
+    width: 35%;
+    height: 47%;
+    border-radius: 29px;
+    background: #855FB1;
+  }
+
+  .middle-number {
+    width: 100%;
+    text-align: center;
+    margin: 20% 0 10% 0;
+  }
+
+  .middle-number img {
+    width: 7%;
+  }
+
+  .section2 {
+    width: 100%;
+  }
+
+  .section2 > div {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2%;
+    margin: 0 auto;
+  }
+
+  .section2 > div > img {
+    width: 100%;
+    border-radius: 4%;
+  }
+
+  .section3 {
+    width: 100%;
+    margin: 10% 0 30% 0;
+  }
+
+  .section3 > div {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .section3 > div > .div2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section3 > div > h5 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  .section3 > div > .div2 > h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 44px;
+  }
+
+  .section3 > div > p {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  footer {
+    background-image: url(/starter-code/assets/desktop/Bitmap\ tablet.png);
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 30% 4%;
+    color: #FAFAFA;
+  }
+
+  footer > img {
+    width: 9%;
+    bottom: 93%;
+  }
+
+  footer > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    max-width: 50%;
+    padding-bottom: 24px;
+    margin: 0 auto
+  }
+
+  footer > p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    max-width: 80%;
+    padding-bottom: 32px;
+    margin: 0 auto;
+  }
+
+  footer > button {
+    width: 30%;
+    height: 50px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-width: 1280px) {
+  section > .for-mobile {
+    display: none;
+  }
+  
+  section > .middle > h1 {
+    font-size: 3.5rem;
+    max-width: 60%;
+  }
+  
+  section > .middle > p {
+    font-size: 1.1rem;
+    max-width: 70%;
+  }
+  
+  section > .middle > .click {
+    margin: 0 auto;
+    width: 65%;
+    height: 43%;
+  }
+  
+  .middle-number {
+    width: 100%;
+    text-align: center;
+    margin: 10% 0 5% 0;
+  }
+  
+  .section2 {
+    width: 100%;
+  }
+  
+  .section3 > div {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  .section3 > div > .div2 {
+    width: 88%;
+    margin: 0 auto;
+  }
+  
+  footer {
+    background-image: url(/starter-code/assets/desktop/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+  }
+  
+  footer > img {
+    bottom: 90%;
+  }
+  
+  footer > h2 {
+    color: #FAFAFA;
+    font-size: 2.5rem;
+    max-width: 40%;
+  }
+  
+  footer > p {
+    color: #FAFAFA;
+    font-size: 1.1rem;
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 1050px) and (min-width: 1680px) {
+  section > .for-mobile {
+    display: none;
+  }
+  
+  section > .middle > h1 {
+    font-size: 4rem;
+    max-width: 50%;
+  }
+  
+  section > .middle > p {
+    font-size: 1.3rem;
+    max-width: 70%;
+  }
+  
+  section > .middle > .click {
+    margin: 0 auto;
+    width: 70%;
+    height: 47%;
+  }
+  
+  .middle-number {
+    width: 100%;
+    text-align: center;
+    margin: 10% 0 5% 0;
+  }
+  
+  .section2 {
+    width: 100%;
+  }
+  
+  .section3 > div {
+    width: 35%;
+    margin: 0 auto;
+  }
+  
+  .section3 > div > .div2 {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .section3 > div > h5 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .section3 > div > .div2 > h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 44px;
+  }
+
+  .section3 > div > p {
+    font-size: 1.3rem;
+    line-height: 26px;
+  }
+  
+  footer {
+    background-image: url(/starter-code/assets/desktop/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 100%;
+  }
+  
+  footer > img {
+    bottom: 90%;
+    width: 4%;
+  }
+  
+  footer > h2 {
+    color: #FAFAFA;
+    font-size: 2.7rem;
+    max-width: 30%;
+  }
+  
+  footer > p {
+    color: #FAFAFA;
+    font-size: 1.2rem;
+    max-width: 27%;
+  }
+}
