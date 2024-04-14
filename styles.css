@@ -183,6 +183,8 @@ section > .middle > .click > button:last-child {
 
 footer {
   background-image: url(/starter-code/assets/desktop/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 30vh;
   width: 100%;
   display: flex;
@@ -221,7 +223,7 @@ footer > p {
 
 footer > button {
   width: 15%;
-  height: 40%;
+  height: 7vh;
   flex-shrink: 0;
   border: none;
   border-radius: 29px;
@@ -270,26 +272,26 @@ footer > button > span {
   }
 
   section > .for-mobile > .div2 > h1 {
-  color: #28283D;
-  text-align: center;
-  font-family: "Red Hat Display";
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 44px;
-  padding-top: 30px;
-  padding-bottom: 24px;
+    color: #28283D;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px;
+    padding-top: 30px;
+    padding-bottom: 24px;
   }
 
   section > .for-mobile > .div2 > p {
-  color: #87879D;
-  text-align: center;
-  font-family: "Red Hat Display";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  padding-bottom: 32px;
+    color: #87879D;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding-bottom: 32px;
   }
 
   section > .for-mobile > .div2 > .click {
@@ -396,8 +398,10 @@ footer > button > span {
 
   footer {
     background-image: url(/starter-code/assets/desktop/Bitmap\ mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    height: 60vh;
+    /* height: 80vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
